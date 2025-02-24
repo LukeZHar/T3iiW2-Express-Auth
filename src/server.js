@@ -6,8 +6,14 @@ const postRoutes = require("./routes/postRoutes");
 
 const app = express();
 
-app.use(cors());
 app.use(helmet());
+
+let corsOptions = {
+    origin: ["http://localhost:3000", "http://localhost:5173", "https://reactapp.com"],
+    methods: ["GET", "POST"]
+}
+
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
