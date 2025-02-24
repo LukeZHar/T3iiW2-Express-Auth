@@ -21,8 +21,8 @@ JWT - JSON Web token
 - Auth middlewares: for JWT validation
 
 ## Utilities
--Database: MongoDB connection setup
-
+- Database: MongoDB connection setup
+ 
 ## Server
 - Express app setup
 
